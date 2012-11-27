@@ -1,6 +1,14 @@
 Sndacs output plugin for Fluent event collector
 =====
 
+Installation
+-----
+
+Simply use RubyGems:
+```
+gem install fluent-plugin-sndacs
+```
+
 Configuration
 -----
 
