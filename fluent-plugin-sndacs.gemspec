@@ -3,7 +3,7 @@ Gem::Specification.new do |gem|
   gem.description = 'Sndacs output plugin for Fluent event collector'
   gem.homepage = 'https://github.com/sparkle/fluent-plugin-sndacs'
   gem.summary = gem.description
-  gem.version = '0.0.2'
+  gem.version = '0.0.3'
   gem.authors = 'Sparkle'
   gem.email = 'popeast@gmail.com'
   gem.files = `git ls-files`.split("\n")

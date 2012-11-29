@@ -15,6 +15,7 @@ module Fluent
       Encoding.default_internal = encoding
     end
 
+    config_param :path, :string, :default => ''
     config_param :access_key_id, :string
     config_param :secret_access_key, :string
     config_param :bucket, :string
@@ -39,7 +40,7 @@ module Fluent
     def write(chunk)
       i = 1
       while true
-        object = @bucket_.objects.build("#{chunk.key}_#{i}.gz")
+        object = @bucket_.objects.build("#{@path}#{chunk.key}_#{i}.gz")
         break unless object.exists?
         i += 1
       end
