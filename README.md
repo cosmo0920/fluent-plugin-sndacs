@@ -1,4 +1,4 @@
-Sndacs output plugin for Fluent event collector
+Sndacs output plugin for [Fluentd](http://fluentd.org) event collector
 =====
 
 Installation
