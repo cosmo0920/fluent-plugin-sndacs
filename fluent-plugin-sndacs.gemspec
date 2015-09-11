@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.email = 'popeast@gmail.com'
   gem.files = `git ls-files`.split("\n")
 
-  gem.add_dependency 'fluentd', '~>0.10.28'
+  gem.add_dependency 'fluentd', ['>= 0.10.28', '< 2']
   gem.add_dependency 'sndacs', '~>0.2.4'
 end
 
