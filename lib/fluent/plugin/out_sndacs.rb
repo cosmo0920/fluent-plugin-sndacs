@@ -16,8 +16,8 @@ module Fluent
     end
 
     config_param :path, :string, :default => ''
-    config_param :access_key_id, :string
-    config_param :secret_access_key, :string
+    config_param :access_key_id, :string, :secret => true
+    config_param :secret_access_key, :string, :secret => true
     config_param :bucket, :string
 
     def configure(conf)
